@@ -1,6 +1,5 @@
 import requests
 import datetime
-import os
 
 # Константы
 HN_API_TOP = "https://hacker-news.firebaseio.com/v0/topstories.json"
