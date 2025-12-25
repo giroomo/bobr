@@ -1,0 +1,14 @@
+name: Daily Digest
+
+on:
+  schedule:
+    # Запуск каждый день в 09:00 UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Позволяет запускать вручную кнопку
+
+jobs:
+  daily-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Digest
+        run: echo "Generating daily digest... Done!"
